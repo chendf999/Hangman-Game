@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css?family=Fondamento|Merienda');
+
+body {
+  text-align: center;
+  font-family: 'Merienda','Fondamento', sans-serif;
+  background-image: url("../images/world-map.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  padding: 20px;
+  background-color: grey;
+  font-size: 20px;
+  color: white;
+}
+
+h2 { padding: 40px; font-size: 30px;}
+P { font-size: 18px; padding: 12px;}
+
+.hint {
+  width: 48.5%;
+  float: left;
+  text-align: right;
+}
+
+.display {
+  text-align: left;
+  width: 48.5%;
+  float: right;
+}
+
+.gameresult { clear: both;}
+
+.hint img {
+  margin-top: 16px;
+  width: 180px; height: auto;
+  outline: 1px black solid;
+}
+
+@keyframes blink {
+    from { color: black;}
+    to { color: red;}
+    60% { color: red;}
+    100% { color: black;}
+}
+
+.highlight {
+  color: red;
+  animation-name: blink;
+  animation-duration: .5s;
+  animation-iteration-count: infinite;
+}
+
+@media screen and (max-width: 680px) {
+  .hint, .display {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+}

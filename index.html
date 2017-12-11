@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Hangman</title>
+	<link rel="stylesheet" href="./assets/css/reset.css">
+	<link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+
+<body>
+	<h1>Let's Play Hangman Game!</h1>
+	<h2>Guess the city name!</h2>
+
+	<div class="hint">
+		<p>A little Hint</p>
+		<img id="flag" src="./assets/images/002.png">
+	</div>
+
+	<div class="display">
+		<p>Your Wins: <span id="wins">0</span></p>
+		<p id="current" class="highlight">Press any key to start</p>
+		<p id="guessed">Letters Guessed: </p>
+		<p>Guesses Remaining<span id="remain"></span></p>
+	</div>
+
+	<div class="gameresult">
+		<h2 id="result" class="highlight"></h2>
+	</div>
+
+	<audio id="soundEffects">
+    <source = src="./assets/sound/guessright.wav" type="audio/wav">
+	</audio>
+
+	<script src="./assets/javascript/game.js"></script>
+</body>
+</html>
